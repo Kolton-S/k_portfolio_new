@@ -1,21 +1,19 @@
 $(document).ready(function() {
-  // Show full page LoadingOverlay
-$.LoadingOverlay("show");
 
 // Hide it after 3 seconds
-setTimeout(function(){
-    $.LoadingOverlay("hide");
-}, 3000);
+setTimeout(function() {
+    $('#loader').fadeOut('slow');
+}, 1000);
 
 
 	$('#fullpage').fullpage({
 		//Navigation
 		menu: '#menu',
 		lockAnchors: false,
-		anchors:['firstPage', 'secondPage'],
+		anchors:['main', 'about'],
 		navigation: false,
 		navigationPosition: 'right',
-		navigationTooltips: ['firstSlide', 'secondSlide'],
+		navigationTooltips: ['main', 'about'],
 		showActiveTooltip: false,
 		slidesNavigation: false,
 		slidesNavPosition: 'bottom',
@@ -56,9 +54,9 @@ setTimeout(function(){
 		//Design
 		controlArrows: true,
 		verticalCentered: true,
-		sectionsColor : ['#ccc', '#fff'],
-		paddingTop: '3em',
-		paddingBottom: '10px',
+		sectionsColor : ['#fff', '#fff'],
+		paddingTop: '',
+		paddingBottom: '',
 		fixedElements: '#header, .footer',
 		responsiveWidth: 0,
 		responsiveHeight: 0,

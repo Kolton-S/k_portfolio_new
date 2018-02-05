@@ -1,13 +1,141 @@
-#nav{
-  z-index: 99;
+/*----- FONTS -----*/
+@import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One');
+
+/* ----- LOADER -----*/
+.loading,
+.loading::before,
+.loading::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left-color: rgba(255, 255, 255, 0.4);
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  border-radius: 999px;
+}
+.loading {
+  margin: -25px 0 0 -25px;
+  height: 50px;
+  width: 50px;
+  -webkit-animation: animation-rotate 1000ms linear infinite;
+  -moz-animation: animation-rotate 1000ms linear infinite;
+  -o-animation: animation-rotate 1000ms linear infinite;
+  animation: animation-rotate 1000ms linear infinite;
+}
+.loading::before {
+  content: "";
+  margin: -23px 0 0 -23px;
+  height: 44px;
+  width: 44px;
+  -webkit-animation: animation-rotate 1000ms linear infinite;
+  -moz-animation: animation-rotate 1000ms linear infinite;
+  -o-animation: animation-rotate 1000ms linear infinite;
+  animation: animation-rotate 1000ms linear infinite;
+}
+.loading::after {
+  content: "";
+  margin: -29px 0 0 -29px;
+  height: 56px;
+  width: 56px;
+  -webkit-animation: animation-rotate 2000ms linear infinite;
+  -moz-animation: animation-rotate 2000ms linear infinite;
+  -o-animation: animation-rotate 2000ms linear infinite;
+  animation: animation-rotate 2000ms linear infinite;
+}
+@-webkit-keyframes animation-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes animation-rotate {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-o-keyframes animation-rotate {
+  100% {
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes animation-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#loader{
+  z-index: 99999999;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100%;
+  position:fixed;
+}
+/*----- SLIDER HOME -----*/
+.night{
+  float: left;
+  background: url('../images/night.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  border-right:9px ridge #a90606;
+}
+.day{
+  float: left;
+  background: url('../images/day.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  border-right:9px ridge #a90606;
+}
+.sunset{
+  float: left;
+  background: url('../images/sunset.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  border-right:9px ridge #a90606;
 }
 
-#nav ul li a{
-  text-decoration: none;
-  color: #000;
+/*----- TYPER -----*/
+#typer-size{
+	font-size: 60px;
+}
+#typed{
+  margin-left: 22%;
 }
 
-#nav ul li{
-  list-style-type: none;
-  display: inline;
+/*----- MAIN HOME -----*/
+/*.main {
+  background: url('../images/logoStart.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+#mainTitle{
+  font-family: 'Anton', sans-serif;
+    margin-right: 20%;
+    margin-top: 16%;
+    font-size: 40pt;
+    text-align: right;
+  color: #A21F26;
+}
+#subtitle{
+  font-family: 'Fjalla One', sans-serif;
+  margin-right: 20%;
+    margin-top: -2%;
+    font-size: 19pt;
+    text-align: right;
 }

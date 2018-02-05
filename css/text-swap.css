@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One');
+
+@-webkit-keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body {
+  	font-family: 'Fjalla One', sans-serif;
+}
+a {
+  color: #33A9B7;
+}
+#typer-size{
+	font-size: 40px;
+}
